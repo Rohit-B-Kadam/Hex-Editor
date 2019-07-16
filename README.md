@@ -1,4 +1,4 @@
-# Executable Dependence Wallet
+# Hex Editor
 
 It is use to display data of exe. In addition we can search the keyword by given input in ASCII as well as Hex decimal.
 
