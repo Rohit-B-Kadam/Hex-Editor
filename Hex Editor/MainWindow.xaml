@@ -1,0 +1,209 @@
+﻿<Window x:Class="Hex_Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hex_Editor"
+        mc:Ignorable="d"
+        Title="Hex Editor" Height="700" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- First Row-->
+        <StackPanel Grid.Row="0" 
+                    x:Name="MyStackPanel"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    >
+            <Label
+                Margin="10,0,0,0"
+                FontSize="20">
+                Name of exe:
+            </Label>
+            <TextBox x:Name="txtExeName"  
+                     Width="200" 
+                     Margin="15,5,0,5" 
+                     VerticalContentAlignment="Center"
+                     FontSize="18" 
+                     KeyUp="txtExeName_KeyUp" 
+                     AllowDrop="True" 
+                     Text="{Binding ExeName}"
+                     IsEnabled="{Binding EnableExeNameTxt}"
+                     />
+            <Label
+                Margin="50,0,0,0"
+                FontSize="20" Content="More size to read:" />
+            
+            <TextBox x:Name="txtDataSize"  
+                     Width="100" 
+                     Margin="15,5,0,5" 
+                     VerticalContentAlignment="Center"
+                     FontSize="18"
+                     AllowDrop="True"
+                     KeyDown="txtExeName_KeyUp" 
+                     Text="{Binding DataSize}"
+                     />
+
+            <Button Name="btnLoadExe"  ToolTip="Load the File"
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Width="110"
+                    Margin="50,5,0,5"
+                    FontSize="18"
+                    Click="LoadExe"
+                    IsEnabled="{Binding EnableLoadBtn}"
+                    >
+                Load Exe
+            </Button>
+        </StackPanel>
+
+        <!-- Second Row-->
+        <StackPanel Grid.Row="1" 
+             x:Name="MyStackPane2"
+             Orientation="Horizontal"
+             VerticalAlignment="Center"
+             IsEnabled="{Binding EnableSearch}"
+                    >
+            <Label
+                Margin="10,0,60,0"
+                FontSize="20">
+                Search:
+            </Label>
+            <TextBox Name="txtSearchString"  
+                     Width="200" 
+                     Margin="8,5,0,5" 
+                     VerticalContentAlignment="Center"
+                     FontSize="18"
+                     KeyUp="txtSearchStr_KeyUp"
+                     Text="{Binding SearchString}"
+                     />
+            <Button Name="btnSearch"  
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Width="110"
+                    Margin="50,5,0,5"
+                    FontSize="18"
+                    IsEnabled="{Binding EnableFindBtn}"
+                    Click="SearchString"
+                    Content="Find"/>
+            <Label
+                Margin="20,0,0,0"
+                FontSize="20">
+                Position:
+            </Label>
+
+            <TextBox Name="txtFoundStr"  
+                     Width="Auto" 
+                     Margin="15,5,0,5" 
+                     VerticalContentAlignment="Center"
+                     FontSize="18"
+                     IsEnabled="False"
+                     Text="{Binding FindPosition}"
+                     />
+
+            <Button Name="btnReset"  
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Width="110"
+                    Margin="50,5,0,5"
+                    FontSize="18"
+                    IsEnabled="{Binding EnableResetBtn}"
+                    Click="ResetApp"
+                    Content="Reset" >
+                <Button.ToolTip >Reset App </Button.ToolTip>
+            </Button>
+        </StackPanel>
+        
+        
+        <!-- Third Row-->
+        <StackPanel Grid.Row="2" 
+             x:Name="MyStackPane3" Orientation="Horizontal" VerticalAlignment="Center" >
+
+            <Label
+                Margin="20,0,0,0"
+                FontSize="12">
+                Select Input Format
+            </Label>
+
+            <RadioButton x:Name="rbAscii"  Checked="Conversion_Click"
+                         GroupName="dataForm"
+                         Margin="10,0,0,0"
+                         FontSize="12" VerticalContentAlignment="Center" IsChecked="{Binding IsAsciiType}" >
+                Ascii
+            </RadioButton>
+
+            <RadioButton x:Name="rbHex"  Checked="Conversion_Click"
+                         GroupName="dataForm"
+                         Margin="10,0,0,0"
+                         FontSize="12" VerticalContentAlignment="Center" >
+                Hex
+            </RadioButton>
+
+        </StackPanel>
+        
+        <!-- Fourth Row -->
+        <Grid Grid.Row="3" >
+
+            <Label x:Name="label" 
+                   Content="HexCode" 
+                   HorizontalAlignment="Left" 
+                   Margin="10,10,0,0" 
+                   VerticalAlignment="Top"  
+                   Width="153" Height="43"
+                   FontSize="20"
+                   />
+            <Label x:Name="label1" 
+                   Content="{Binding OffsetDisplay}" 
+                   HorizontalAlignment="Left" 
+                   Margin="150,10,0,0" 
+                   VerticalAlignment="Top"  
+                   Height="43" Width="112"
+                   FontSize="15"/>
+                
+           
+                <Grid>
+                    <DataGrid Name="DGHexCode" ItemsSource="{Binding Data}" 
+                                  VerticalAlignment="Top"
+                                  HorizontalAlignment="Center"
+                                  Width="1100"
+                                  Margin="10,50,10,10"
+                                  AutoGenerateColumns="False"
+                                  IsReadOnly="True"
+                                  SelectionUnit="Cell"
+                                  VerticalScrollBarVisibility="Auto"
+                                  HorizontalScrollBarVisibility="Hidden"
+                              EnableRowVirtualization="False"
+                              EnableColumnVirtualization="False"
+                                  >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Offset" Width="2*" Binding="{Binding Offset}"/>
+                            <DataGridTextColumn Header="0" Width="*" Binding="{Binding Zero}" />
+                            <DataGridTextColumn Header="1" Width="*" Binding="{Binding One}" />
+                            <DataGridTextColumn Header="2" Width="*" Binding="{Binding Two}" />
+                            <DataGridTextColumn Header="3" Width="*" Binding="{Binding Three}" />
+                            <DataGridTextColumn Header="4" Width="*" Binding="{Binding Four}" />
+                            <DataGridTextColumn Header="5" Width="*" Binding="{Binding Five}" />
+                            <DataGridTextColumn Header="6" Width="*" Binding="{Binding Six}" />
+                            <DataGridTextColumn Header="7" Width="*" Binding="{Binding Seven}" />
+                            <DataGridTextColumn Header="8" Width="*" Binding="{Binding Eight}" />
+                            <DataGridTextColumn Header="9" Width="*" Binding="{Binding Nine}" />
+                            <DataGridTextColumn Header="A" Width="*" Binding="{Binding A}" />
+                            <DataGridTextColumn Header="B" Width="*" Binding="{Binding B}" />
+                            <DataGridTextColumn Header="C" Width="*" Binding="{Binding C}" />
+                            <DataGridTextColumn Header="D" Width="*" Binding="{Binding D}" />
+                            <DataGridTextColumn Header="E" Width="*" Binding="{Binding E}" />
+                            <DataGridTextColumn Header="F" Width="*" Binding="{Binding F}" />
+                            <DataGridTextColumn Header="Ascii String" Width="5*" Binding="{Binding Ascii}" />
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            
+        </Grid>
+    </Grid>
+</Window>

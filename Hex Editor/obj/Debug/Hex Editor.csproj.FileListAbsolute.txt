@@ -1,0 +1,45 @@
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\bin\Debug\Hex Editor.exe.config
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\bin\Debug\Hex Editor.exe
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\bin\Debug\Hex Editor.pdb
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.csprojAssemblyReference.cache
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\MainWindow.g.cs
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\App.g.cs
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor_MarkupCompile.cache
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor_MarkupCompile.lref
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\MainWindow.baml
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.g.resources
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\Hex_Editor.Properties.Resources.resources
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.csproj.GenerateResource.cache
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.csproj.CoreCompileInputs.cache
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.exe
+H:\Technology\Dot Net\Learning\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.pdb
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\bin\Debug\Hex Editor.exe.config
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\bin\Debug\Hex Editor.exe
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\bin\Debug\Hex Editor.pdb
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.csprojAssemblyReference.cache
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\MainWindow.g.cs
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\App.g.cs
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor_MarkupCompile.cache
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor_MarkupCompile.lref
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\MainWindow.baml
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.g.resources
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\Hex_Editor.Properties.Resources.resources
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.csproj.GenerateResource.cache
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.csproj.CoreCompileInputs.cache
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.exe
+H:\Technology\Dot Net\Project\Hex Editor\Hex Editor\obj\Debug\Hex Editor.pdb
+H:\Technology\Dot Net\Hex Editor\Hex Editor\bin\Debug\Hex Editor.exe.config
+H:\Technology\Dot Net\Hex Editor\Hex Editor\bin\Debug\Hex Editor.exe
+H:\Technology\Dot Net\Hex Editor\Hex Editor\bin\Debug\Hex Editor.pdb
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\Hex Editor.csprojAssemblyReference.cache
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\MainWindow.g.cs
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\App.g.cs
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\Hex Editor_MarkupCompile.cache
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\Hex Editor_MarkupCompile.lref
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\MainWindow.baml
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\Hex Editor.g.resources
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\Hex_Editor.Properties.Resources.resources
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\Hex Editor.csproj.GenerateResource.cache
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\Hex Editor.csproj.CoreCompileInputs.cache
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\Hex Editor.exe
+H:\Technology\Dot Net\Hex Editor\Hex Editor\obj\Debug\Hex Editor.pdb
