@@ -1,6 +1,6 @@
 # Executable Dependence Wallet
 
-It is use to display data inside the exe. In addition we can search the keyword by given input in ASCII as well as Hex decimal.
+It is use to display data of exe. In addition we can search the keyword by given input in ASCII as well as Hex decimal.
 
 - __Framework:__ Dot Net.
 - __Front End:__ Windows Presentation Foundation (WPF)
